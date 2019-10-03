@@ -1,6 +1,8 @@
 # Quepid
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![GitHub release](https://img.shields.io/github/release/o19s/quepid.svg)][releases]
+[![Docker Pulls](https://img.shields.io/docker/pulls/quepid/quepid.svg)][docker]
 
 <img src="https://quepid.com/images/logo.png" alt="Quepid logo" title="Quepid" align="right" />
 
