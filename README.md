@@ -8,14 +8,14 @@
 
 Quepid makes improving your app's search results a repeatable, reliable engineering process that the whole team can understand. It deals with three issues:
 
-1. **Our collaboration stinks** Making holistic progress on search requires deep, cross-functional collaboration. Shooting emails or tracking search requirements in spreadsheets won't cut it.
+1. **Our collaboration stinks** Making holistic progress on search requires deep, cross-functional collaboration. Sending emails back and forth or tracking search requirements in spreadsheets doesn't cut it.
 
-2. ***Search testing is hard*** Search changes are cross-cutting: most changes will cause problems. Testing is difficult: you can't run hundreds of searches after every relevance change.
+2. **Search testing is hard** Search changes are cross-cutting: most changes will cause problems. Testing is difficult: you can't run hundreds of searches after every relevance change.
 
-3. **Iterations are slow** Moving forward seems impossible. To avoid sliding backwards, progress is slow. Many simply give up on search, depriving users of the means to find critical information.
+3. **Iterations are slow** Moving forward seems impossible. To avoid sliding backwards, forward progress is slow. Many simply give up on search, depriving users of the means to find critical information.
 
 
-**To find out more, please check out the [Quepid website](http://www.quepid.com) and the [Quepid wiki](http://github.com/o19s/quepid/wiki).**
+**To find out more, please check out the [Quepid website](http://www.quepid.com) and the [Quepid wiki](http://github.com/o19s/quepid/wiki).**   To learn more about how to install Quepid, checkout the [Install Guide](https://github.com/o19s/quepid/wiki/Installation-Guide).
 
 # Table of Contents
 Below is information related to developing the Quepid open source project.
@@ -54,6 +54,22 @@ Below is information related to developing the Quepid open source project.
 - [Credits](#credits)
 
 <!-- /MarkdownTOC -->
+# Deployment
+*Tech stack:**
+
+- **Ruby on Rails** powers the REST API and other web pages
+- **Angular1** drives the front end UI
+
+**Requirements:**
+
+- **MySQL** 6.5+
+- **Redis**
+- **Ruby** 2.4+
+- **Node.js** 8+
+
+The repository includes deployment configurations for **docker-compose**, which we use for both development and can be for production, but also a few specific platforms like **Heroku**. The [**stand-alone** installation guide](https://github.com/o19s/quepid/wiki/Installation-Guide) is available in the documentation.
+
+The primary development platform is via  **docker-compose.dev.yml** Docker Compose scripte, included for development purposes.
 
 # Development Setup
 
@@ -65,7 +81,7 @@ Provisioning from an already built machine takes approximately 3 - 4 minutes. Pr
 
 #### 1. Prerequisites
 
-Make sure you have installed Docker. Go here https://www.docker.com/community-edition#/download for installation instructions. And the Docker app is launched.
+Make sure you have installed Docker. Go to https://www.docker.com/community-edition#/download for installation instructions. And the Docker app is launched.
 
 To install using brew follow these steps:
 
