@@ -15,7 +15,7 @@ Dir.chdir APP_ROOT do
   when 'daemon', 'q'
     system 'docker-compose run -d --service-ports app foreman s -f Procfile.dev'
   when 'destroy', 'd'
-    system 'docker-compose down'
+    system 'docker-compose down -v'
   when 'run', 'r'
     system "docker-compose run --rm app #{rest.join(' ')}"
   when 'stop', 'p'

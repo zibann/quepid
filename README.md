@@ -104,7 +104,7 @@ You can still use `docker-compose` directly, but for the basic stuff you can use
 * Building the image: `bin/docker build` or `bin/docker b`
 * Start the vm: `bin/docker start` or `bin/docker t`
 * Stop the vm: `bin/docker stop` or `bin/docker p`
-* Destroy the image: `bin/docker destroy` or `bin/docker d`
+* Destroy the vm: `bin/docker destroy` or `bin/docker d`
 * Start the app: `bin/docker server` or `bin/docker s`
 * Connect to the app container with bash: `bin/docker bash` or `bin/docker c`
 * Run any command: `bin/docker run [COMMAND]` or `bin/docker r [COMMAND]`
