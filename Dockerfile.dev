@@ -41,7 +41,9 @@ RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 # Clean environment
 RUN apt-get clean all
 
+COPY Gemfile* /tmp/
+WORKDIR /tmp
+RUN bundle install
+
 COPY . /srv/app
 WORKDIR /srv/app
-
-RUN bundle install
